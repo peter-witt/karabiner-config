@@ -338,7 +338,7 @@
                         ]
                     },
                     {
-                        "description": "CAPSLOCK = esc if alone, otherwise caps",
+                        "description": "CAPSLOCK = Esc if alone, otherwise Caps Lock",
                         "manipulators": [
                             {
                                 "from": {
