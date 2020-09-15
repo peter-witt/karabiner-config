@@ -533,6 +533,35 @@
 			]
 		},
 		{
+			"description": "CAPSLOCK + space = CTRL+space",
+			"manipulators": [
+				{
+					"conditions": [
+						{
+							"name": "caps_lock pressed",
+							"type": "variable_if",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "spacebar",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "spacebar",
+							"modifiers": "left_control"
+						}
+					],
+					"type": "basic"
+				}
+			]
+		},
+		{
 			"description": "CAPSLOCK = Esc if alone, otherwise Caps Lock",
 			"manipulators": [
 				{
@@ -565,7 +594,7 @@
 								"value": 0
 							}
 						}
-					] 
+					]
 				}
 			]
 		}

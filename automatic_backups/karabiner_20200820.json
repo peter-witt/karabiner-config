@@ -373,35 +373,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "CAPSLOCK + space = CTRL+space",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "caps_lock pressed",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": "left_control"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },
@@ -549,36 +520,6 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "fn"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_control"
-                            },
-                            "to": {
-                                "key_code": "fn"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 598,
-                        "vendor_id": 1452
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
                                 "consumer_key_code": "eject"
                             },
                             "to": {
@@ -587,48 +528,18 @@
                         },
                         {
                             "from": {
-                                "key_code": "fn"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
-                        },
-                        {
-                            "from": {
                                 "key_code": "left_control"
                             },
                             "to": {
                                 "key_code": "fn"
                             }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 2311,
-                        "vendor_id": 7847
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "right_control"
-                            },
-                            "to": {
-                                "key_code": "right_command"
-                            }
                         },
                         {
                             "from": {
-                                "key_code": "right_option"
+                                "key_code": "fn"
                             },
                             "to": {
-                                "key_code": "right_control"
+                                "key_code": "left_control"
                             }
                         }
                     ]
